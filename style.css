@@ -1,0 +1,146 @@
+/* 1. Use a more intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margins for common layout elements */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* 3. Set core body defaults for a fluid height and good readability */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 4. Make media elements easier to work with and responsive */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5. Inherit fonts for form inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 6. Avoid text overflows and balance headings */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* 7. Remove animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+header {
+  color: #fff;
+  background-color: #55c955;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.3rem;
+  color: #fff;
+  background-color: #111010d8;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-event {
+  max-width: 800px;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 2rem;
+}
+
+.about-event h2,
+.event-schedule h2 {
+  color: #3535fade;
+  margin-bottom: 10px;
+}
+
+.event-schedule {
+  width: 800px;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 2rem;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+.table-header,
+.row-color {
+  background-color: rgb(248, 245, 245);
+}
